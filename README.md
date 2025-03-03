@@ -58,7 +58,7 @@ git rebase -i HEAD~2
 git rebase -i HEAD~2
 ```
 
-## Challenge 3: 4. Splitting a Commit:
+## Challenge 3:Splitting a Commit:
 
 ```
 git reset HEAD~1
