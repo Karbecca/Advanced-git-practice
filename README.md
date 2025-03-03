@@ -117,8 +117,6 @@ git rebase -i HEAD~3
 
 ```
 
-```
-
 git checkout -b ft/branch
 touch test5.md
 git add test5.md
@@ -129,7 +127,6 @@ git cherry-pick <commit-hash>
 ```
 
 ## Challenge 9: Visualizing Commit History (Bonus)
-```
 
 ```
 git log --graph --oneline --all
@@ -154,13 +151,13 @@ git log --graph --oneline --all
 
 ```
 
-```
-
 git reflog
 git reset --hard HEAD@{n}
 
 ```
+
 # OUTPUT:
+
 ```
 
 8669561 (HEAD -> ft/branch) HEAD@{0}: commit: Implemented test 5
@@ -172,8 +169,8 @@ git reset --hard HEAD@{n}
 61e76c9 (origin/main, main) HEAD@{6}: commit: Saving changes before rebase
 20280db HEAD@{7}: commit: chore: Create third and fourth files
 :
-
 ```
 
+```
 
 ```
