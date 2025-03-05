@@ -171,6 +171,71 @@ git reset --hard HEAD@{n}
 :
 ```
 
+### Part 2: Branching Basics (10 Challenges)
+
+## 1. Feature Branch Creation:
+
+OUTPUT:
+
+```
+$ git checkout -b ft/new-feature
+Switched to a new branch 'ft/new-feature'
+```
+
+## 2.Working on the Feature Branch:
+
+OUTPUT:
+
+```
+$ echo "Feature content" > feature.txt
+git add feature.txt
+git commit -m "Implemented core functionality for new feature"
+warning: in the working copy of 'feature.txt', LF will be replaced by CRLF the next time Git touches it
+[ft/new-feature 99ec44e] Implemented core functionality for new feature
+ 1 file changed, 1 insertion(+)
+ create mode 100644 feature.txt
+
+```
+
+## 3.Switching Back and Making More Changes:
+
+OUTPUT:
+
+```
+git checkout main
+echo "Project Introduction" > readme.txt
+git add readme.txt
+git commit -m "Updated project readme"
+ 1 file changed, 1 insertion(+)
+ create mode 100644 readme.txt
+```
+
+## 4.Local vs. Remote Branches:
+
+OUTPUT:
+
+```
+git push origin ft/new-feature
+
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 545 bytes | 272.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/new-feature' on GitHub by visiting:
+remote:      https://github.com/Karbecca/Advanced-git-practice/pull/new/ft/new-feature
+remote:
+To https://github.com/Karbecca/Advanced-git-practice.git
+ * [new branch]      ft/new-feature -> ft/new-feature
+```
+
+## 5.Branch Deletion:
+
+OUTPUT:
+
 ```
 
 ```
