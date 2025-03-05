@@ -237,5 +237,14 @@ To https://github.com/Karbecca/Advanced-git-practice.git
 OUTPUT:
 
 ```
+ git branch -d ft/new-feature
+Deleted branch ft/new-feature (was f989d92).
+```
+
+## 6.Creating a Branch from a Commit:
+
+OUTPUT:
+
+```
 
 ```
