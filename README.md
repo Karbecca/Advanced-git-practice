@@ -236,6 +236,24 @@ To https://github.com/Karbecca/Advanced-git-practice.git
 
 OUTPUT:
 
+```bash
+ git branch -d ft/new-feature
+Deleted branch ft/new-feature (was f989d92).
 ```
+
+## 6.Creating a Branch from a Commit:
+
+OUTPUT:
+
+```bash
+$ git checkout -b ft/new-branch-from-commit f989d92
+Switched to a new branch 'ft/new-branch-from-commit
+```
+
+## 7. Branch Merging:
+
+OUTPUT:
+
+```bash
 
 ```
