@@ -255,5 +255,24 @@ Switched to a new branch 'ft/new-branch-from-commit
 OUTPUT:
 
 ```bash
+git merge ft/new-branch-from-commit
+
+```
+
+## 8. Branch Rebase:
+
+OUTPUT:
+
+```bash
+$ git rebase --continue
+Successfully rebased and updated refs/heads/ft/new-branch-from-commit.
+```
+
+## 9.Renaming Branches:
+
+OUTPUT:
+
+```bash
+git branch -m ft/new-branch-from-commit ft/improved-branch-name
 
 ```
