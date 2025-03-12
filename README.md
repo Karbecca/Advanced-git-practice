@@ -236,6 +236,9 @@ To https://github.com/Karbecca/Advanced-git-practice.git
 
 OUTPUT:
 
+```bash
+ git branch -d ft/new-feature
+Deleted branch ft/new-feature (was f989d92).
 ```
  git branch -d ft/new-feature
 Deleted branch ft/new-feature (was f989d92).
@@ -287,5 +290,39 @@ git commit -m "Resolved merge conflict"
 OUTPUT:
 
 ```bash
+
+## 6.Creating a Branch from a Commit:
+
+OUTPUT:
+
+```bash
+$ git checkout -b ft/new-branch-from-commit f989d92
+Switched to a new branch 'ft/new-branch-from-commit
+```
+
+## 7. Branch Merging:
+
+OUTPUT:
+
+```bash
+git merge ft/new-branch-from-commit
+
+```
+
+## 8. Branch Rebase:
+
+OUTPUT:
+
+```bash
+$ git rebase --continue
+Successfully rebased and updated refs/heads/ft/new-branch-from-commit.
+```
+
+## 9.Renaming Branches:
+
+OUTPUT:
+
+```bash
+git branch -m ft/new-branch-from-commit ft/improved-branch-name
 
 ```
