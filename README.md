@@ -240,3 +240,52 @@ OUTPUT:
  git branch -d ft/new-feature
 Deleted branch ft/new-feature (was f989d92).
 ```
+
+### Part 3
+
+## 1. Stashing Changes:
+
+OUTPUT:
+
+```bash
+$ git stash
+Saved working directory and index state WIP on main: c574ec8 edited read me
+```
+
+## 2. Retrieving Stashed Changes:
+
+OUTPUT:
+
+```bash
+no changes added to commit (use "git add" and/or "git commit -a")
+Dropped refs/stash@{0} (9866661162c5aeb119cf2c4a5ae916936a2ef974)
+```
+
+## 3.Simulating a Merge Conflict
+
+OUTPUT:
+
+```bash
+$ git checkout -b feature-branch
+Switched to a new branch 'feature-branch
+
+$ echo "Hello from feature branch" >> conflict.txt
+git add conflict.txt
+git commit -m "Feature branch changes"
+warning: in the working copy of 'conflict.txt', LF will be replaced by CRLF the next time Git touches it
+[feature-branch fcb62a0] Feature branch changes
+ 1 file changed, 1 insertion(+)
+
+ $ git add conflict.txt
+git commit -m "Resolved merge conflict"
+[main a8d4f05] Resolved merge conflict
+
+```
+
+## 4. Resolving Merge Conflicts with a Merge Tool:
+
+OUTPUT:
+
+```bash
+
+```
